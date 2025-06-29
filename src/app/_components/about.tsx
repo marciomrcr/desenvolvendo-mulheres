@@ -1,5 +1,5 @@
 import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
-import { Check, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import Image from "next/image";
 import about1Img from "../../../public/about-1.png";
 import about2Img from "../../../public/about-2.png";
@@ -43,28 +43,23 @@ export function About() {
           >
             <h2 className="text-4xl font-bold">SOBRE</h2>
 
-            <p>
-              Until one has loved an animal, a part of one's soul remains
-              unawakened. We believe in it and we believe in easy access to
-              things that are good for our mind, body and spirit. With a clever
-              offering, superb support and a secure checkout you're in good
-              hands.
+            <p className="text-pretty text-justify">
+              Amar um animal é despertar o melhor que há em nós. É por isso que,
+              desde 2006, cuidamos de pets como parte da nossa própria família.{" "}
             </p>
-
-            <ul className="space-y-4">
-              <li className="flex items-center gap-2">
-                <Check className="text-red-500" />
-                Aberto desde 2006.
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="text-red-500" />
-                Equipe com mais de 10 veterinários.
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="text-red-500" />
-                Qualidade é nossa prioridade.
-              </li>
-            </ul>
+            <p className="text-pretty text-justify">
+              Com uma equipe experiente, formada por mais de 10 veterinários
+              apaixonados pelo que fazem, oferecemos atendimento de excelência,
+              produtos selecionados com rigor e um ambiente seguro — tanto na
+              loja física quanto na online.
+            </p>
+            <p className="text-pretty text-justify">
+              Aqui, cada detalhe é pensado para garantir o bem-estar do seu pet.
+              Atendimento humanizado, suporte rápido e checkout seguro fazem
+              parte da nossa missão: proporcionar praticidade, carinho e
+              confiança em cada visita.
+            </p>
+            <h3 className="font-semibold">Seu pet em boas mãos. Sempre.</h3>
 
             <div className="flex gap-2">
               <a

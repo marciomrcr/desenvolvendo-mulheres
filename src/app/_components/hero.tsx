@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="bg-[#E84C3D] text-white relative overflow-hidden mt-14"
+      className="bg-[#E84C3D] text-white relative overflow-hidden"
     >
       <div>
         <Image
@@ -28,11 +28,12 @@ export function Hero() {
               className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10"
               data-aos="fade-down"
             >
-              Seu pet merece cuidado, carinho e atenção especial.
+              Onde o bem-estar do seu pet ganha vida.
             </h1>
-            <p className=" lg:text-lg" data-aos="fade-right">
-              Oferecemos os melhores serviços para garantir o bem-estar e a
-              felicidade do seu amigo de quatro patas.
+            <p className="lg:text-lg mt-4" data-aos="fade-right">
+              Cuidamos do seu pet com carinho, tecnologia e excelência. Agende
+              agora seu primeiro atendimento com <strong>5% de desconto</strong>{" "}
+              e descubra por que somos referência em saúde e felicidade animal.
             </p>
 
             <a

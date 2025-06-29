@@ -108,7 +108,7 @@ export function Services() {
 
                       <a
                         target="_blank"
-                        href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações sbore ${item.title}`}
+                        href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações sobre ${item.title}`}
                         className="flex items-center justify-center gap-2 hover:bg-red-500 px-4 py-1 rounded-md duration-300"
                       >
                         <WhatsappLogo className="w-5 h-5" />
@@ -122,14 +122,14 @@ export function Services() {
           </div>
 
           <button
-            className="bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute left-3 -translate-y-1/2 -translate-x-1/2 top-1/2 z-10"
+            className="bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute left-4 md:left-6 -translate-y-1/2 -translate-x-1/2 top-1/2 z-10"
             onClick={scrollPrev}
           >
             <ChevronLeft className="w-6 h-6 text-gray-600" />
           </button>
 
           <button
-            className="bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute -right-6 -translate-y-1/2 -translate-x-1/2 top-1/2 z-10"
+            className="bg-white flex items-center justify-center rounded-full shadow-lg w-10 h-10 absolute right-4 md:right-6 -translate-y-1/2 translate-x-1/2 top-1/2 z-10"
             onClick={scrollNext}
           >
             <ChevronRight className="w-6 h-6 text-gray-600" />

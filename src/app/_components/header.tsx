@@ -10,7 +10,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-[#1E293B] text-[#EFC349] shadow-md pr-8 ">
+    <header className="fixed top-0 left-0 w-full z-50 bg-[#1E293B] text-[#EFC349] shadow-md pr-4 ">
       <div className="container-default flex items-center justify-between py-2 mx-auto px-4 md:px-8">
         {/* Logo e nome */}
         <div className="flex items-center gap-2">

@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="bg-[#E84C3D] text-white relative overflow-hidden"
+      className="bg-[#E84C3D] text-white relative overflow-hidden mt-14"
     >
       <div>
         <Image

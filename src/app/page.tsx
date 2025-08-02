@@ -1,5 +1,6 @@
 import { About } from "./_components/about";
 import { Footer } from "./_components/footer";
+import Gallery from "./_components/Gallery";
 import { Header } from "./_components/header";
 import { Hero } from "./_components/hero";
 import { MouseTrail } from "./_components/MouseTrail";
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <Gallery />
       <Testimonials />
       <MouseTrail />
       <Footer />

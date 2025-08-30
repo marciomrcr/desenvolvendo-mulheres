@@ -1,3 +1,5 @@
+import { Cardapio } from "@/components/Cardapio";
+import { PorqueNosEscolher } from "@/components/PorqueNosEscolher";
 import { ProdutosSecao } from "@/components/ProdutosSecao";
 import { About } from "./_components/about";
 import { Footer } from "./_components/footer";
@@ -20,6 +22,8 @@ export default function Home() {
       <HeroDoces />
       <HeroDoces2 />
       <ProdutosSecao />
+      <PorqueNosEscolher />
+      <Cardapio />
       <About />
       <Services />
       <Gallery />

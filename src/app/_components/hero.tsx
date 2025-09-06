@@ -2,7 +2,7 @@
 import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 import catImg from "../../../public/cat-hero.png";
-import dogImg from "../../../public/hero-dog.webp";
+import dogImg from "../../../public/imagem1.jpg";
 
 // Constantes do componente
 const WHATSAPP_NUMBER = "5591988534110";

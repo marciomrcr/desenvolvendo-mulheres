@@ -4,11 +4,9 @@ import {
   ChefHat,
   Clock,
   Gift,
-  Heart,
   Shield,
   Star,
   Truck,
-  Users,
 } from "lucide-react";
 
 export const PorqueNosEscolher = () => {
@@ -36,28 +34,6 @@ export const PorqueNosEscolher = () => {
       highlight: "Entrega em 24h",
       stats: "98% no prazo",
     },
-    {
-      icon: <Heart className="w-8 h-8 text-pink-500" />,
-      title: "Feito com Amor",
-      description:
-        "Cada doce é preparado com carinho especial para sua ocasião",
-      highlight: "Atenção personalizada",
-      stats: "Cada pedido é único",
-    },
-    {
-      icon: <Award className="w-8 h-8 text-purple-500" />,
-      title: "Reconhecimento",
-      description: "Eleitos 'Melhor Doceria da Região' por 3 anos consecutivos",
-      highlight: "Prêmio 2022, 2023, 2024",
-      stats: "3x vencedores",
-    },
-    {
-      icon: <Users className="w-8 h-8 text-indigo-500" />,
-      title: "Clientes Satisfeitos",
-      description: "Mais de 5.000 famílias já provaram nossos doces",
-      highlight: "+5.000 famílias atendidas",
-      stats: "98% de satisfação",
-    },
   ];
 
   const guarantees = [
@@ -80,22 +56,22 @@ export const PorqueNosEscolher = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-pink-900 via-pink-800 to-pink-900 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div
           className="absolute inset-0"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}
+          // style={{
+          //   backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          // }}
         />
       </div>
 
       {/* Decorative floating elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-20 h-20 bg-gradient-to-br from-pink-500/20 to-orange-500/20 rounded-full blur-xl animate-pulse delay-1000" />
-        <div className="absolute bottom-32 right-16 w-32 h-32 bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-full blur-xl animate-pulse delay-2000" />
-        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-gradient-to-br from-green-500/20 to-yellow-500/20 rounded-full blur-xl animate-pulse delay-3000" />
+        <div className="absolute top-20 left-10 w-20 h-20 bg-gradient-to-br from-pink-500/20 to-orange-500/20 rounded-full animate-pulse delay-1000" />
+        <div className="absolute bottom-32 right-16 w-32 h-32 bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-full  animate-pulse delay-2000" />
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-gradient-to-br from-green-500/20 to-yellow-500/20 rounded-full animate-pulse delay-3000" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -129,14 +105,14 @@ export const PorqueNosEscolher = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {features.map((feature, index) => (
             <div key={index} className="group relative">
-              <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 h-full hover:bg-white/10 transition-all duration-300 hover:border-white/20 hover:shadow-2xl hover:shadow-purple-500/10 transform hover:-translate-y-2">
+              <div className="bg-white/5 border border-white/10 rounded-2xl p-8 h-full transition-all duration-300 transform">
                 {/* Icon */}
                 <div className="mb-6 relative">
                   <div className="w-16 h-16 bg-gradient-to-br from-white/10 to-white/5 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-white/20">
                     {feature.icon}
                   </div>
                   {/* Glow effect */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl transition-opacity duration-300 -z-10" />
                 </div>
 
                 {/* Content */}
@@ -161,8 +137,7 @@ export const PorqueNosEscolher = () => {
                   </div>
                 </div>
 
-                {/* Hover border effect */}
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl" />
+                {/* Removing hover border effect */}
               </div>
             </div>
           ))}
@@ -183,7 +158,7 @@ export const PorqueNosEscolher = () => {
             {guarantees.map((guarantee, index) => (
               <div
                 key={index}
-                className="flex items-center space-x-3 bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:bg-white/10 transition-all duration-300"
+                className="flex items-center space-x-3 bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 transition-all duration-300"
               >
                 {guarantee.icon}
                 <span className="text-white font-semibold">

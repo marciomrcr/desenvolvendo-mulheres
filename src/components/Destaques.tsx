@@ -23,36 +23,51 @@ export const Destaques = () => {
 
   return (
     product && (
-      <div className="max-w-6xl w-full px-6">
-        <div className="flex flex-col md:flex-row gap-16 mt-4">
-          <div className="flex gap-3">
-            <div className="flex flex-col gap-3">
+      <div className="w-full px-4 sm:px-6">
+        <div className="flex flex-col lg:flex-row lg:gap-6 mt-4 items-start justify-between">
+          {/* Coluna da esquerda - Imagens */}
+          <div className="flex flex-col gap-3 w-full lg:w-1/2 lg:pr-3">
+            {/* Imagem principal */}
+            <div className="border border-gray-500/30 rounded-md overflow-hidden w-full">
+              <div className="aspect-square relative">
+                <Image
+                  src={thumbnail}
+                  alt="Selected product"
+                  fill
+                  priority
+                  className="object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Miniaturas em linha horizontal */}
+            <div className="flex flex-row gap-2 overflow-x-auto pb-2">
               {product.images.map((image, index) => (
                 <div
                   key={image}
                   onClick={() => setThumbnail(image)}
-                  className="border max-w-24 border-gray-500/30 rounded overflow-hidden cursor-pointer"
+                  className={`border-2 rounded-md overflow-hidden cursor-pointer flex-shrink-0 transition-all duration-200 ${
+                    thumbnail === image
+                      ? "border-blue-500"
+                      : "border-gray-200 hover:border-gray-400"
+                  }`}
                 >
-                  <Image
-                    src={image}
-                    alt={`Thumbnail ${index + 1}`}
-                    width={100}
-                    height={100}
-                  />
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 relative">
+                    <Image
+                      src={image}
+                      alt={`Thumbnail ${index + 1}`}
+                      fill
+                      sizes="(max-width: 640px) 64px, 80px"
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
               ))}
             </div>
-
-            <div className="border border-gray-500/30 max-w-100 rounded overflow-hidden">
-              <img
-                src={thumbnail}
-                alt="Selected product"
-                className="w-full h-full object-cover"
-              />
-            </div>
           </div>
 
-          <div className="text-sm w-full md:w-1/2">
+          {/* Coluna da direita - Informações do produto */}
+          <div className="text-sm w-full lg:w-1/2 lg:pl-3">
             <h1 className="text-3xl font-medium">{product.name}</h1>
 
             <div className="flex items-center gap-0.5 mt-1">
@@ -108,14 +123,14 @@ export const Destaques = () => {
               ))}
             </ul>
 
-            <div className="flex items-center mt-10 b gap-4 text-base">
+            <div className="flex items-center mt-8 sm:mt-10 gap-4 text-base">
               <a
                 id="contact"
                 data-aos="fade-up"
                 data-aos-delay="500"
                 target="_blank"
                 href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações`}
-                className="bg-green-400 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2"
+                className="bg-green-400 hover:bg-green-500 transition-colors px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2 text-white"
                 rel="noopener noreferrer"
               >
                 <WhatsappLogo className="w-5 h-5" />

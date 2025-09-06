@@ -73,7 +73,6 @@ export function Hero() {
                   <Image
                     src={catImg}
                     alt="Foto do gato"
-                    quality={100}
                     className="object-fill"
                   />
                 </div>
@@ -89,7 +88,6 @@ export function Hero() {
               className="object-contain"
               fill
               sizes="(max-width: 768px) 0vw, 50vw"
-              quality={100}
               priority
             />
           </div>

@@ -40,7 +40,6 @@ export function Footer() {
                   alt={item.name}
                   width={100}
                   height={50}
-                  quality={100}
                   style={{
                     width: "auto",
                     height: "auto",
@@ -60,7 +59,6 @@ export function Footer() {
                 alt="Logo marca pet"
                 width={120}
                 height={120}
-                quality={100}
                 priority
                 className="object-cover w-20 h-20 mb-2 md:mb-0 md:w-24 md:h-24 mx-auto md:mx-0"
               />
